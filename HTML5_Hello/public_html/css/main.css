@@ -1,0 +1,34 @@
+/* 
+    Created on : Feb 21, 2015, 9:44:47 AM
+    Author     : admin
+*/
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+h1 {
+    color: green;
+    font-size: 1.8em;
+
+}
+#world_image {
+    float: left;
+    border: 1px solid #ccccff;
+    margin-right: 20px;
+}
+.section_heading {
+    background-color: green;
+    color: white;
+}
+#hmenu a {
+    background-color: green;
+    color: white;
+    padding: 3px 5px;
+    text-decoration: none;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+    border-radius: 3px;
+}
+#hmenu a:hover {
+    background-color: #33cc00;
+}
+
