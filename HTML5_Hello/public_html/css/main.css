@@ -19,6 +19,16 @@ h1 {
     background-color: green;
     color: white;
 }
+
+/* Horizontal menu */
+#hmenu {
+    list-style-type: none;
+    margin: 0 0 9px;
+    padding: 0;
+}
+#hmenu li {
+    display: inline;
+}
 #hmenu a {
     background-color: green;
     color: white;
