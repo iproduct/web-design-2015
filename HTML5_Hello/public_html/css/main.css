@@ -16,8 +16,7 @@ h1 {
     margin-right: 20px;
 }
 .section_heading {
-    background-color: green;
-    color: white;
+    color: green;
 }
 
 /* Horizontal menu */
@@ -43,7 +42,7 @@ h1 {
 }
 
 #main {
-    background-color: green;
+    background-color: #ccc;
 }
 
 #content {
@@ -68,7 +67,7 @@ nav#vnav ul li{
 }
 
 nav#vnav a {
-    color: whitesmoke;
+    color: green;
     text-decoration: none;
     list-style-type: none;
 }
