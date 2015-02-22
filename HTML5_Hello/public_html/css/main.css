@@ -46,17 +46,12 @@ h1 {
 }
 
 #content {
-    margin-left: 150px;
     background-color: whitesmoke;
     padding: 5px 20px;
-    
+
 }
 
 /* Left navigation */
-nav#vnav {
-    float: left;
-}
-
 nav#vnav ul {
     list-style-type: none;
     padding: 0;
@@ -111,4 +106,19 @@ footer {
     background-color: #888;
     color: white;
     text-align: center; 
+}
+
+@media screen and (max-width: 600px) {
+    #content {
+        margin-left:0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav#vnav {
+        float: left;
+    }
+    #content {
+        margin-left: 150px;
+    }
 }
