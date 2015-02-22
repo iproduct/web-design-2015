@@ -16,7 +16,7 @@ h1 {
     margin-right: 20px;
 }
 .section_heading {
-    color: green;
+    color: #333;
 }
 
 /* Horizontal menu */
@@ -67,7 +67,7 @@ nav#vnav ul li{
 }
 
 nav#vnav a {
-    color: green;
+    color: #333;
     text-decoration: none;
     list-style-type: none;
 }
@@ -103,4 +103,12 @@ table#versions_table {
 #versions_table tfoot tr {
     background-color: #ddf;
     font-size: 0.8em;
+}
+
+/* Footer */
+footer {
+    padding: 5px 20px;
+    background-color: #888;
+    color: white;
+    text-align: center; 
 }
