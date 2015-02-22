@@ -42,6 +42,38 @@ h1 {
     background-color: #33cc00;
 }
 
+#main {
+    background-color: green;
+}
+
+#content {
+    margin-left: 150px;
+    background-color: whitesmoke;
+    padding: 5px 20px;
+    
+}
+
+/* Left navigation */
+nav#vnav {
+    float: left;
+}
+
+nav#vnav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#vnav ul li{
+    padding: 5px 20px;
+}
+
+nav#vnav a {
+    color: whitesmoke;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
 #world_image{
     width: 300px;
     height: 200px; 
