@@ -37,3 +37,29 @@ h1 {
     height: 200px; 
 }
 
+/* History table */
+table#versions_table {
+    width: 100%;
+}
+
+#versions_table td, #versions_table th {
+    padding: 5px 10px;
+}
+
+#versions_table thead tr {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#versions_table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+#versions_table tbody tr:nth-child(even) {
+    background-color: #ddf;
+}
+
+#versions_table tfoot tr {
+    background-color: #ddf;
+    font-size: 0.8em;
+}
