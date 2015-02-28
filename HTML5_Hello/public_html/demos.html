@@ -11,6 +11,8 @@
         <!--[if lt IE 9]>
            <script src="js/html5shiv.min.js"></script>
         <![endif]-->
+
+
         <h1>Hello from HTML 5</h1>
         <div id="hmenu">
             <a href="index.html">Home</a>
@@ -22,13 +24,27 @@
         <a href="https://www.flickr.com/photos/varshinimj/16584420021" title="A beautiful Heart.. by amirtha, on Flickr">
             <img src="https://farm9.staticflickr.com/8592/16584420021_3ecd76784b_s.jpg" width="75" height="75" alt="A beautiful Heart..">
         </a>
-        <h2>Image Map Demo</h2>
-        <img src="img/world_m.jpg" width="600" height="328" border="0" usemap="#map" />
+        
+        <!-- Image map -->
+        <section id="image_map_demo">
+            <h2>Image Map Demo</h2>
+            <img src="img/world_m.jpg" width="600" height="328" border="0" usemap="#map" />
 
-        <map name="map">
-            <area shape="poly" coords="399,110,417,99,419,88,412,81,393,52,358,64,335,77,332,87,333,112,336,122,352,112,355,105,368,104,364,114,377,120,393,120,398,111" alt="Europe in Wikipedia" href="http://en.wikipedia.org/wiki/Europe" />
-            <area shape="poly" coords="338,121,329,128,329,133,314,152,313,164,329,187,349,184,374,217,371,234,385,269,414,256,426,223,428,198,443,187,447,174,432,171,410,137,405,129,385,126,384,132,370,125,364,116" href="http://en.wikipedia.org/wiki/Africa" />
-        </map>
+            <map name="map">
+                <area shape="poly" coords="399,110,417,99,419,88,412,81,393,52,358,64,335,77,332,87,333,112,336,122,352,112,355,105,368,104,364,114,377,120,393,120,398,111" alt="Europe in Wikipedia" href="http://en.wikipedia.org/wiki/Europe" />
+                <area shape="poly" coords="338,121,329,128,329,133,314,152,313,164,329,187,349,184,374,217,371,234,385,269,414,256,426,223,428,198,443,187,447,174,432,171,410,137,405,129,385,126,384,132,370,125,364,116" href="http://en.wikipedia.org/wiki/Africa" />
+            </map>
+        </section>
+        
+        <!-- Video -->
+        <section id="video_demo">
+            <h2>HTML 5 Video Demo</h2>
+            <video width="320" height="240" controls>
+                <source src="video/lego_robot.mp4" type="video/mp4">
+                <source src="video/lego_robot.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
     </body>
 </html>
