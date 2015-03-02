@@ -2,6 +2,8 @@
     Created on : Feb 21, 2015, 9:44:47 AM
     Author     : admin
 */
+@charset "UTF-8";  
+
 body{
     font-family: "Times New Roman", Times, serif;
     text-align: justify;
@@ -20,15 +22,16 @@ body{
 }
 
 #login_form {
+    color:white;
     border: 1px solid white;
     border-radius: 5px;
-    background-color: white;
+    background-color: #888;
     opacity: 0.8;
     width: 230px;
-    margin-top: 4px;
+    margin-top: 3px;
     float: right;
     margin-right: 5px;
-    height: 70px;
+    height: 72px;
     padding: 0px 5px;
 }
 
@@ -43,9 +46,8 @@ body{
    
 }
 
-#login_form input[type=text] {
-    background-color: whitesmoke;
-    border-radius: 5px;
+#login_form input:not([type="submit"]) {
+    background-color: white;
     opacity: 1;
     width: 150px;
 }
@@ -99,6 +101,27 @@ h1 {
     background-color: whitesmoke;
     padding: 5px 20px;
 
+}
+
+/* Goto Top navigation */
+nav#gototop {
+    display: block;
+    width: 100px;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ccf;
+    color: white;
+    font: 1em Arial, serif;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+
+nav#gototop a{
+    color: green;
+    text-decoration: none;
 }
 
 /* Left navigation */
@@ -156,6 +179,7 @@ footer {
     background-color: #888;
     color: white;
     text-align: center; 
+    clear: both;
 }
 
 @media screen and (max-width: 600px) {
