@@ -4,6 +4,11 @@
 */
 @charset "UTF-8";  
 
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf");
+} 
+
 body{
     font-family: "Times New Roman", Times, serif;
     text-align: justify;
@@ -55,6 +60,10 @@ body{
 
 #login {
     float: right;
+}
+
+h1, h2, nav a {
+    font-family: Lobster, Arial, sans-serif;
 }
 
 h1 {
