@@ -8,7 +8,7 @@
 
 $(document).ready(function(){
     $(".output").html("Hello from JavaScript!");
-//    $("p").click(function(){
-//        $(this).hide();
-//    });
+    $("#hide_all").mouseenter(function(){
+        $(".output").fadeToggle(2000);
+    });
 });
