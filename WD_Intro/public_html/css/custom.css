@@ -6,3 +6,27 @@
     float: right;
     margin: 20px 0 10px 20px;
 }
+h1, h2, h3, .hmenu, body {
+    font-family: Calibri, Arial, sans-serif;
+}
+h2 {
+    color: white;
+    background-color: steelblue;
+    padding: 5px 20px;
+}
+.video {
+    float: right;
+}
+.video a {
+   display: inline-block;
+   background-color: activecaption;
+   color: blue;
+   border: 1px solid cornflowerblue;
+   padding: 5px 13px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.video a:hover {
+    background-color:  highlight;
+}
