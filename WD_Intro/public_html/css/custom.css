@@ -1,3 +1,28 @@
+/* Page layout */
+#page {
+    width: 960px;
+    margin: auto;
+    background-color: #eef;
+    border-radius: 10px;
+    padding:0;
+}
+
+header, footer, main {
+    padding: 10px 15px;
+}
+
+header {
+    background-color: cornflowerblue;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    color: white;
+}
+
+footer {
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+}
+
 /* Main menu */
 .hmenu ul {
     padding: 0;
@@ -8,13 +33,32 @@
     margin: 0;
 }
 
-.hmenu li a {
-    display: inline-block;
+/* Left menu */
+.lmenu {
+    float: left;
+    width: 150px;
+}
+
+.lmenu ul {
+    padding: 0;
+}
+.lmenu li{
+    list-style-type: none;
+    margin: 0;
+}
+
+main {
+    margin-left: 160px;
+    border-left: 1px dotted #ccc;
+}
+.lmenu li a {
+    display:block;
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid appworkspace;
     background-color: cornflowerblue;
     color: white;
+    margin: 5px;
     text-decoration: none;
 }
 
@@ -84,4 +128,16 @@ h2 {
 .applications thead {
     background-color: cornflowerblue;
     color: white;
+}
+
+/* Footer */
+footer{
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #888;
+    color: white;
+    padding: 10px 25px;
+}
+footer a {
+    color: lightblue;
 }
