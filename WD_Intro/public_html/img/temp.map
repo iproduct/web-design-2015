@@ -1,0 +1,5 @@
+<img src="[Untitled]" width="512" height="313" border="0" usemap="#map" />
+
+<map name="map">
+<area shape="rect" coords="100,209,203,257" target="video_frame" href="www.youtube.com/embed/MAA9JpGraoU" />
+</map>
