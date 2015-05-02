@@ -33,6 +33,23 @@ footer {
     margin: 0;
 }
 
+.hmenu li a {
+    display:inlineblock;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid appworkspace;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.hmenu li a:hover {
+    background-color: #5664ff;
+    color: white;
+    text-decoration: none;
+}
+
 /* Left menu */
 .lmenu {
     float: left;
@@ -45,6 +62,22 @@ footer {
 .lmenu li{
     list-style-type: none;
     margin: 0;
+}
+.lmenu li a {
+    display:block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid appworkspace;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.lmenu li a:hover {
+    background-color: #5664ff;
+    color: white;
+    text-decoration: none;
 }
 
 main {
