@@ -36,9 +36,56 @@ and open the template in the editor.
                 </ul>                 
             </nav>
             <main>
-                
-                <!-- Place main content here -->
-                
+                <form action="http://www.w3schools.com/html/demo_post.asp" method="POST" 
+                      target="_blank">
+                    <table class="feedback">
+                        <tr>
+                            <td>Your Name:</td>
+                            <td><input type="text" name="name" size="40" maxlength="40"
+                                       placeholder="Ivan Petrov"></td>
+                        </tr>
+                        <tr>
+                            <td>Your E-mail:</td>
+                            <td><input type="email" name="email" size="40"
+                                       placeholder="ivan@yourdomain.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Feedback type:</td>
+                            <td>
+                                <input type="checkbox" name="type" value="question" id="question" checked="checked" />
+                                <label for="question">Question</label>
+                                <input type="checkbox" name="type" value="suggestion" id="suggestion" />
+                                <label for="suggestion">Suggestion</label>
+                                <input type="checkbox" name="type" value="comment" id="comment" />
+                                <label for="comment">Comment</label>
+                                <input type="checkbox" name="type" value="problem" id="problem" />
+                                <label for="problem">Report a problem</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Your feedback:</td>
+                            <td><textarea rows="5" cols="60" placeholder="Your text here ..."></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>The site is: </td>
+                            <td>
+                                <input type="radio" name="rating" value="easy" id="easy">
+                                <label for="easy">easy to use</label>
+                                <input type="radio" name="rating" value="moderate" id="moderate">
+                                <label for="moderate">moderately easy use</label>
+                                <input type="radio" name="rating" value="hard" id="hard">
+                                <label for="hard">difficult to use</label>
+                            </td>  
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" name="submit" value="Send Feedback">
+                                <input type="reset" value="Reset Form">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+
             </main>
             <footer>
                 Creative Commons Share Alike &copy; Course Web Design 2015. 

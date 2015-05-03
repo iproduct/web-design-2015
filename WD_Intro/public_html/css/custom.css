@@ -80,9 +80,12 @@ footer {
     text-decoration: none;
 }
 
+
+/* Main content */
 main {
     margin-left: 160px;
     border-left: 1px dotted #ccc;
+    min-height: 400px;
 }
 .lmenu li a {
     display:block;
@@ -173,4 +176,13 @@ footer{
 }
 footer a {
     color: lightblue;
+}
+ 
+/* Feedback page */
+.feedback td{
+    padding: 5px 10px;
+}
+
+.feedback label {
+    margin-right: 20px;
 }
