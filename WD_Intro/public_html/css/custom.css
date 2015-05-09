@@ -3,9 +3,7 @@
     /*width: 960px;*/
     width: 90%;
     margin: auto;
-    background-image: url("../img/horizontal.jpg");
-    background-repeat: repeat-y;
-    background-position: 20%;
+    background: #ccf url("../img/horizontal.jpg")repeat-y 20%;
     border-radius: 10px;
     padding:0;
 }
@@ -144,6 +142,10 @@ h2 {
 /* Applications page */
 .applications, .applications td, .applications th {
     border: 1px solid gray;
+}
+
+.applications > tbody > tr:nth-child(even) {
+    background-color: #f8f8f8;
 }
 
 .applications td {
