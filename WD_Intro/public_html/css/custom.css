@@ -1,6 +1,6 @@
 /* Page layout */
 body{
-    background-image: url("../img/net2.gif");
+    background-image: url("../img/bo_play_pattern.png");
 }
 
 #page {
@@ -13,7 +13,7 @@ body{
 }
 
 header, footer, main {
-    padding: 10px 15px;
+    padding: 10px 25px;
 }
 
 header {
@@ -29,7 +29,7 @@ footer {
 }
 
 /* Main menu */
-.hmenu ul {
+/*.hmenu ul {
     padding: 0;
 }
 .hmenu li{
@@ -53,10 +53,12 @@ footer {
     background-color: #5664ff;
     color: white;
     text-decoration: none;
-}
+}*/
 
 /* Left menu */
 .lmenu {
+    box-sizing: border-box;
+    padding: 10px 20px;
     float: left;
     width: 20%;
 }
@@ -70,18 +72,23 @@ footer {
 }
 .lmenu li a {
     display:block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid appworkspace;
-    background-color: cornflowerblue;
-    color: white;
-    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccccff;
+    border-left: 1px solid #ccccff;
+    border-right: 1px solid #001344;
+    border-bottom: 1px solid #001344;
+    border-radius: 15px 0;
+    background-color: rgb(43, 62, 255);
+    color: #f0f0f0;
+    margin: 10px 5px;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
 .lmenu li a:hover {
-    background-color: #5664ff;
-    color: white;
+    background: #2f5fff;
+    color:#fff;
     text-decoration: none;
 }
 
@@ -91,22 +98,6 @@ main {
     margin-left: 20%;
     border-left: 1px dotted #ccc;
     min-height: 400px;
-}
-.lmenu li a {
-    display:block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid appworkspace;
-    background-color: cornflowerblue;
-    color: white;
-    margin: 5px;
-    text-decoration: none;
-}
-
-.hmenu li a:hover {
-    background-color: #5664ff;
-    color: white;
-    text-decoration: none;
 }
 
 .img_left {
@@ -194,4 +185,16 @@ footer a {
 
 .feedback label {
     margin-right: 20px;
+}
+
+#back_to_top a{
+    border: 1px solid gray;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none
 }
