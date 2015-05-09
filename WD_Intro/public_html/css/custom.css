@@ -1,4 +1,8 @@
 /* Page layout */
+body{
+    background-image: url("../img/net2.gif");
+}
+
 #page {
     /*width: 960px;*/
     width: 90%;
