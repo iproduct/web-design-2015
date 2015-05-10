@@ -20,7 +20,7 @@ ul.menu>li>a {
     padding: 8px 20px;
     border-radius: 5px;
     border: 1px solid appworkspace;
-    background-color: rgb(43, 62, 255);
+    /*background-color: rgb(43, 62, 255);*/
     margin: 5px 5px 5px 0;
     text-decoration: none;
     color: #f0f0f0;
@@ -36,7 +36,7 @@ ul.menu>li>a {
 }
 
 ul.menu li:hover>a{
-    background: #2f5fff;
+ /*   background: #2f5fff; */
     color:#fff;
 }
 
