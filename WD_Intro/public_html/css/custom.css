@@ -1,8 +1,27 @@
 /* Page layout */
+@font-face{
+    font-family: exo2;
+    src: url("../font/Exo2-Regular.ttf");
+}
+
+@font-face{
+    font-family: exo2;
+    font-weight: bold;
+    src: url("../font/Exo2-Bold.ttf");
+}
+
+h1, h2, h3, .hmenu, body {
+   /* font-family: Calibri, Arial, sans-serif;*/
+   font-family: exo2, sans-serif;
+}
 body{
     background-image: url("../img/bo_play_pattern.png");
 }
-
+h2 {
+    color: white;
+    background-color: steelblue;
+    padding: 5px 20px;
+}
 #page {
     /*width: 960px;*/
     width: 90%;
@@ -10,7 +29,13 @@ body{
     background: #ccf url("../img/horizontal.jpg")repeat-y 20%;
     border-radius: 10px;
     padding:0;
+    box-shadow: 15px 15px 100px 0px #3333ff, 
+        0 0 50px 20px rgba(255,255,255,0.3) inset;
 }
+
+header {
+    box-shadow: 0 20px 50px 20px rgba(255,255,255,0.3) inset;
+} 
 
 header, footer, main {
     padding: 10px 25px;
@@ -83,7 +108,6 @@ footer {
     color: #f0f0f0;
     margin: 10px 5px;
     text-decoration: none;
-    font-size: 1.1em;
 }
 
 .lmenu li a:hover {
@@ -108,14 +132,6 @@ main {
     float: right;
     max-width: 400px;
     margin: 20px 0 10px 20px;
-}
-h1, h2, h3, .hmenu, body {
-    font-family: Calibri, Arial, sans-serif;
-}
-h2 {
-    color: white;
-    background-color: steelblue;
-    padding: 5px 20px;
 }
 .video {
     float: right;
@@ -228,4 +244,22 @@ background: -o-linear-gradient(top,  rgba(193,218,242,1) 0%,rgba(115,165,206,1) 
 background: -ms-linear-gradient(top,  rgba(193,218,242,1) 0%,rgba(115,165,206,1) 3%,rgba(53,106,160,1) 82%,rgba(53,106,160,1) 97%,rgba(42,79,124,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(193,218,242,1) 0%,rgba(115,165,206,1) 3%,rgba(53,106,160,1) 82%,rgba(53,106,160,1) 97%,rgba(42,79,124,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1daf2', endColorstr='#2a4f7c',GradientType=0 ); /* IE6-8 */
+}
+
+/* Robot animation in index.html */
+@-webkit-keyframes robot_walk {
+    0% {left: 0px;  top: 0px; transform: scale(1);}
+   25% {left: -250px;  top: 0px; transform: scale(0.7);}  
+  100% {left: -250px;  top: 400px; transform: scale(0.7);}  
+}
+@keyframes robot_walk {
+    0% {left: 0px;  top: 0px; transform: scale(1);}
+   25% {left: -250px;  top: 0px; transform: scale(0.7);}  
+  100% {left: -250px;  top: 400px; transform: scale(0.7);}  
+}
+
+#robot {
+    position: relative;
+    -webkit-animation:  robot_walk 5s ease-in-out 2 alternate;
+    animation: robot_walk 5s ease-in-out 2 alternate;
 }
