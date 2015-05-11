@@ -1,5 +1,5 @@
 /* Page layout */
-@font-face{
+/*@font-face{
     font-family: exo2;
     src: url("../font/Exo2-Regular.ttf");
 }
@@ -8,11 +8,11 @@
     font-family: exo2;
     font-weight: bold;
     src: url("../font/Exo2-Bold.ttf");
-}
+}*/
 
 h1, h2, h3, .hmenu, body {
    /* font-family: Calibri, Arial, sans-serif;*/
-   font-family: exo2, sans-serif;
+   font-family: "Exo 2", sans-serif;
 }
 body{
     background-image: url("../img/bo_play_pattern.png");
