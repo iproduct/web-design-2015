@@ -12,12 +12,12 @@ function init() {
     canvas.onmousemove = function(e){
         var canvasX, canvasY;
         if (e.pageX || e.pageY) { 
-          x = e.pageX;
-          y = e.pageY;
+          canvasX = e.pageX;
+          canvasY = e.pageY;
         }
         else { 
-          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
-          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
+          canvasX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
+          canvasY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
         } 
         canvasX -= canvas.offsetLeft;
         canvasY -= canvas.offsetTop;
