@@ -13,9 +13,9 @@ function init() {
     ctx.fillRect(50, 30, 150, 75);
     ctx.strokeRect(50, 30, 150, 75);
     ctx.fillStyle = "black";
-    drawPacman(ctx);
-    drawSphere(ctx);
-    drawText(ctx);
+//    drawPacman(ctx);
+//    drawSphere(ctx);
+//    drawText(ctx);
 //    drawRobot(ctx);
     loadImages(ctx, "img/robot", ".svg", 4, animate);
     
@@ -26,12 +26,38 @@ function init() {
                 start = timestamp;
             var progress = timestamp - start;
             ctx.clearRect(0, 0, width, height);
-            ctx.drawImage(images[0], 130, 15, 725, 990, progress /15, 100, 145, 200);
+            drawImage(images, Math.PI /2, 50, 1, progress, 0, 0, 200);
             if (progress < 8000) {
                 window.requestAnimationFrame(step);
             }
         }
         window.requestAnimationFrame(step);
+    }
+    
+    function drawImage(images, angle, speed, scale, progress, 
+        startX, startY, startSize){
+        var image;
+        ctx.clearRect(0, 0, width, height);
+        ctx.save();
+        var times = Math.floor(angle / (2 * Math.PI));
+        angle  = times * 2 * Math.PI;
+        console.log("Angle: " + angle);
+        var position = progress*speed/1000;
+        var sizeY = startSize; //* progress*scale/1000;
+        console.log("Progress: " + position);
+        ctx.translate(startX + Math.cos(angle)*position, startY+ Math.sin(angle)*position);
+        if (angle > (7/4)*Math.PI || angle <= (1/4)*Math.PI) {
+            image = images[2];
+        } else if (angle > (1/4)*Math.PI && angle <= (3/4)*Math.PI) {
+            image = images[1];
+        }else if (angle > (3/4)*Math.PI && angle <= (5/4)*Math.PI) {
+            image = images[0];
+        }else {
+            image = images[3];
+        }
+        var sizeX = sizeY * image.width / image.height;
+        ctx.drawImage(image, 0, 0, sizeX, sizeY);
+        ctx.restore();
     }
 
 }
