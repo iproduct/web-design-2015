@@ -6,7 +6,9 @@ function init() {
     var ctx = canvas.getContext("2d");
     var width = canvas.width;
     var height = canvas.height;
-
+    var angle = 0;
+    var startX = 10, startY = 10;
+  
     ctx.fillStyle = "yellow";
     ctx.strokeStyle = "blue";
     ctx.lineWidth = 2;
@@ -26,8 +28,17 @@ function init() {
                 start = timestamp;
             var progress = timestamp - start;
             ctx.clearRect(0, 0, width, height);
-            drawImage(images, Math.PI /2, 50, 1, progress, 0, 0, 200);
-            if (progress < 8000) {
+            var pos = drawImage(images, angle, 100, 1, progress, 
+                startX, startY, 200);
+            console.log(pos);
+            if (pos.dir === "right" && pos.x > 300){
+                start = timestamp;
+                angle += Math.PI /2; 
+                startX = pos.x;
+                startY = pos.y;
+            }
+
+            if (progress < 16000) {
                 window.requestAnimationFrame(step);
             }
         }
@@ -40,24 +51,28 @@ function init() {
         ctx.clearRect(0, 0, width, height);
         ctx.save();
         var times = Math.floor(angle / (2 * Math.PI));
-        angle  = times * 2 * Math.PI;
+        angle  = angle - times * 2 * Math.PI;
         console.log("Angle: " + angle);
         var position = progress*speed/1000;
         var sizeY = startSize; //* progress*scale/1000;
-        console.log("Progress: " + position);
-        ctx.translate(startX + Math.cos(angle)*position, startY+ Math.sin(angle)*position);
+//        console.log("Progress: " + position);
+        var xPos = startX + Math.cos(angle)*position;
+        var yPos = startY+ Math.sin(angle)*position;
+        var dir;
+        ctx.translate(xPos, yPos);
         if (angle > (7/4)*Math.PI || angle <= (1/4)*Math.PI) {
-            image = images[2];
+            image = images[3]; dir = "right";
         } else if (angle > (1/4)*Math.PI && angle <= (3/4)*Math.PI) {
-            image = images[1];
+            image = images[0];  dir = "down";
         }else if (angle > (3/4)*Math.PI && angle <= (5/4)*Math.PI) {
-            image = images[0];
+            image = images[1];  dir = "left";
         }else {
-            image = images[3];
+            image = images[2]; dir= "up";
         }
         var sizeX = sizeY * image.width / image.height;
         ctx.drawImage(image, 0, 0, sizeX, sizeY);
         ctx.restore();
+        return { x: xPos, y: yPos, dir: dir };
     }
 
 }
