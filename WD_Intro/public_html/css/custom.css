@@ -263,3 +263,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1daf2', end
     -webkit-animation:  robot_walk 5s ease-in-out 2 alternate;
     animation: robot_walk 5s ease-in-out 2 alternate;
 }
+
+/* Entertainment page */
+#canvas01 {
+    border:1px solid green;
+    width: 600px;
+    height: 500px;
+}
+
+#robot01 {
+    display: none;
+}
