@@ -6,8 +6,9 @@ function init() {
     var ctx = canvas.getContext("2d");
     var width = canvas.width;
     var height = canvas.height;
-    var angle = 0;
-    var startX = 10, startY = 10;
+    var angle = 0, direction = "right";
+    var xPos = 10, yPos = 10, sizeX = 200, sizeY = 200;
+    var lastTime = 0;
     
     canvas.onmousemove = function(e){
         var canvasX, canvasY;
@@ -21,7 +22,9 @@ function init() {
         } 
         canvasX -= canvas.offsetLeft;
         canvasY -= canvas.offsetTop;
-        console.log(canvasX, ", ", canvasY);
+        angle = Math.atan2(canvasY - yPos - sizeY /2, canvasX - xPos - sizeX/2) + 2 * Math.PI; ;
+        console.log(canvasY - yPos, ", ", canvasX - xPos);
+        console.log(angle);
     }
   
     ctx.fillStyle = "yellow";
@@ -37,60 +40,52 @@ function init() {
     loadImages(ctx, "img/robot", ".svg", 4, animate);
     
     function animate(images) {
-        var start;
         function step(timestamp) {
-            if (!start)
-                start = timestamp;
-            var progress = timestamp - start;
+            if (!lastTime) lastTime = timestamp;
+            var progress = timestamp - lastTime;
             ctx.clearRect(0, 0, width, height);
-            var pos = drawImage(images, angle, 300, 1, progress, 
-                startX, startY, 200);
-//            console.log(pos);
-            if (pos.dir === "right" && pos.x > 300 
-                    || pos.dir === "down" && pos.y > 300
-                    || pos.dir === "left" && pos.x < 10
-                    || pos.dir === "up" && pos.y < 10){
-                start = timestamp;
-                angle += Math.PI /2; 
-                startX = pos.x;
-                startY = pos.y;
-            } 
-                
-            if (progress < 16000) {
-                window.requestAnimationFrame(step);
+            drawImage(images, angle, 200, progress);
+            if (xPos > width - sizeX || xPos < 10) {
+                angle = Math.atan2(Math.sin(angle), -Math.cos(angle));
             }
+            if  (yPos > height - sizeY || yPos < 10) {
+                angle = Math.atan2(-Math.sin(angle), Math.cos(angle));
+            }
+                
+            lastTime = timestamp;
+            window.requestAnimationFrame(step);
         }
+        
         window.requestAnimationFrame(step);
     }
     
-    function drawImage(images, angle, speed, scale, progress, 
-        startX, startY, startSize){
+  
+    function drawImage(images, angle, speed, progress){
         var image;
         ctx.clearRect(0, 0, width, height);
         ctx.save();
         var times = Math.floor(angle / (2 * Math.PI));
-        angle  = angle - times * 2 * Math.PI;
+        angle = angle - times * 2 * Math.PI;
 //        console.log("Angle: " + angle);
-        var position = progress*speed/1000;
-        var sizeY = startSize; //* progress*scale/1000;
-//        console.log("Progress: " + position);
-        var xPos = startX + Math.cos(angle)*position;
-        var yPos = startY+ Math.sin(angle)*position;
-        var dir;
+        var deltaPosition = progress*speed/1000;
+        console.log("Progress: " + deltaPosition);
+        xPos += Math.cos(angle)*deltaPosition;
+        yPos += Math.sin(angle)*deltaPosition;
+        console.log("Position: " + xPos + ", " + yPos);
+
         ctx.translate(xPos, yPos);
         if (angle > (7/4)*Math.PI || angle <= (1/4)*Math.PI) {
-            image = images[3]; dir = "right";
+            image = images[3]; direction = "right";
         } else if (angle > (1/4)*Math.PI && angle <= (3/4)*Math.PI) {
-            image = images[0];  dir = "down";
+            image = images[0];  direction = "down";
         }else if (angle > (3/4)*Math.PI && angle <= (5/4)*Math.PI) {
-            image = images[1];  dir = "left";
+            image = images[1];  direction = "left";
         }else {
-            image = images[2]; dir= "up";
+            image = images[2]; direction= "up";
         }
-        var sizeX = sizeY * image.width / image.height;
+        sizeX = sizeY * image.width / image.height;
         ctx.drawImage(image, 0, 0, sizeX, sizeY);
         ctx.restore();
-        return { x: xPos, y: yPos, dir: dir };
     }
 
 }
