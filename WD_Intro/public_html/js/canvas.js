@@ -36,7 +36,23 @@ function init() {
                 angle += Math.PI /2; 
                 startX = pos.x;
                 startY = pos.y;
+            } else if (pos.dir === "down" && pos.y > 300){
+                start = timestamp;
+                angle += Math.PI /2; 
+                startX = pos.x;
+                startY = pos.y;
+            } else if (pos.dir === "left" && pos.x < 10){
+                start = timestamp;
+                angle += Math.PI /2; 
+                startX = pos.x;
+                startY = pos.y;
+            } else if (pos.dir === "up" && pos.y < 10){
+                start = timestamp;
+                angle += Math.PI /2; 
+                startX = pos.x;
+                startY = pos.y;
             }
+                
 
             if (progress < 16000) {
                 window.requestAnimationFrame(step);
