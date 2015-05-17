@@ -8,6 +8,21 @@ function init() {
     var height = canvas.height;
     var angle = 0;
     var startX = 10, startY = 10;
+    
+    canvas.onmousemove = function(e){
+        var canvasX, canvasY;
+        if (e.pageX || e.pageY) { 
+          x = e.pageX;
+          y = e.pageY;
+        }
+        else { 
+          x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
+          y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
+        } 
+        canvasX -= canvas.offsetLeft;
+        canvasY -= canvas.offsetTop;
+        console.log(canvasX, ", ", canvasY);
+    }
   
     ctx.fillStyle = "yellow";
     ctx.strokeStyle = "blue";
@@ -28,32 +43,19 @@ function init() {
                 start = timestamp;
             var progress = timestamp - start;
             ctx.clearRect(0, 0, width, height);
-            var pos = drawImage(images, angle, 100, 1, progress, 
+            var pos = drawImage(images, angle, 300, 1, progress, 
                 startX, startY, 200);
-            console.log(pos);
-            if (pos.dir === "right" && pos.x > 300){
+//            console.log(pos);
+            if (pos.dir === "right" && pos.x > 300 
+                    || pos.dir === "down" && pos.y > 300
+                    || pos.dir === "left" && pos.x < 10
+                    || pos.dir === "up" && pos.y < 10){
                 start = timestamp;
                 angle += Math.PI /2; 
                 startX = pos.x;
                 startY = pos.y;
-            } else if (pos.dir === "down" && pos.y > 300){
-                start = timestamp;
-                angle += Math.PI /2; 
-                startX = pos.x;
-                startY = pos.y;
-            } else if (pos.dir === "left" && pos.x < 10){
-                start = timestamp;
-                angle += Math.PI /2; 
-                startX = pos.x;
-                startY = pos.y;
-            } else if (pos.dir === "up" && pos.y < 10){
-                start = timestamp;
-                angle += Math.PI /2; 
-                startX = pos.x;
-                startY = pos.y;
-            }
+            } 
                 
-
             if (progress < 16000) {
                 window.requestAnimationFrame(step);
             }
@@ -68,7 +70,7 @@ function init() {
         ctx.save();
         var times = Math.floor(angle / (2 * Math.PI));
         angle  = angle - times * 2 * Math.PI;
-        console.log("Angle: " + angle);
+//        console.log("Angle: " + angle);
         var position = progress*speed/1000;
         var sizeY = startSize; //* progress*scale/1000;
 //        console.log("Progress: " + position);
