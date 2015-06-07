@@ -16,6 +16,13 @@ p {
     border: 1px solid #88f;
     border-radius: 5px;
 }
+#hmenu a:hover {
+    background-color: #0066cc;
+}
+#hmenu a:active {
+    border-color: white;
+}
+
 .img-left {
     float: left; 
     margin-right: 20px;
@@ -32,5 +39,7 @@ abbr {
     border-radius: 5px;
     padding: 3px;
 }
+
+
 
 
