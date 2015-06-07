@@ -1,0 +1,24 @@
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+#hmenu {
+    background-color: #ddf;
+}
+#hmenu a {
+    color: white;
+    background-color: cornflowerblue;
+    font-family: "Lucida Sans", Arial, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    border: 1px solid #88f;
+    border-radius: 5px;
+}
+.img-left {
+    float: left; 
+    margin-right: 20px;
+}
+
+
