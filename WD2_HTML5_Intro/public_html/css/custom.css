@@ -20,5 +20,17 @@ p {
     float: left; 
     margin-right: 20px;
 }
+.text-right {
+    text-align: right;
+}
+
+abbr {
+    background-color: #ccc;
+    font-family: monospace;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 3px;
+}
 
 
