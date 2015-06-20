@@ -2,10 +2,10 @@ p {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-#hmenu {
+.hmenu {
     background-color: #ddf;
 }
-#hmenu a {
+.hmenu a {
     color: white;
     background-color: cornflowerblue;
     font-family: "Lucida Sans", Arial, sans-serif;
@@ -16,16 +16,21 @@ p {
     border: 1px solid #88f;
     border-radius: 5px;
 }
-#hmenu a:hover {
+.hmenu a:hover {
     background-color: #0066cc;
 }
-#hmenu a:active {
+.hmenu a:active {
     border-color: white;
 }
 
 .img-left {
     float: left; 
     margin-right: 20px;
+}
+.container-right {
+    float: right; 
+    margin-left: 10px;
+    width: 300px;
 }
 .text-right {
     text-align: right;
