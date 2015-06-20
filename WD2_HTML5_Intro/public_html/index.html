@@ -18,67 +18,87 @@ and open the template in the editor.
         <![endif]-->
     </head>
     <body>
-        <h1>Internet of Things (IoT)</h1>
-        <p class="hmenu"><a href="index.html">Home</a><a href="samples.html">Sample Projects</a></p>
-        <hr>
-        <img class="img-left" src="img/robot.jpg" alt="IPT Lego Java Robot" width="300" 
-             title="IPT Lego Java Robot" height="225">
-        <p>Internet of Things (IoT) and Social Robotics are regarded by many 
-            as the next major technological challenge – a wave of change 
-            comparable in effect to emergence of Internet itself. 
-        </p>
-        <p><abbr title="Internet of Things">IoT</abbr> is emerging as fusion of several technological tendencies in 
-            their inter-dependence:<br>
-            - Internet of Things & Mobility<br>
-            - Social Robotics<br>
-            - Big Data, Analytics and Cloud Computing<br>
-            - Web Services & 
-            <abbr title="Service Oriented Architecture">SOA</abbr> Infrastructure
-        </p>
+        <header>
+            <h1>Internet of Things (IoT)</h1>
+            <nav class="hmenu">
+                <a href="index.html">Home</a>
+                <a href="samples.html">Sample Projects</a>
+            </nav>
+        </header>        
+        <div class="container">
+            <nav class="vmenu">
+                <a href="#intro">Introduction</a>
+                <a href="#history">History</a>
+                <a href="#ai">Artifical Intelligence</a>
+                    
+            </nav>
+            <main>
 
-        <div class="container-right hmenu">
-            <iframe name="videos" width="300" height="220" frameborder="0" 
-                    src="https://www.youtube.com/embed/Q3ur8wzzhBU" allowfullscreen>
-            [YouTube IoT videos]
-            </iframe>
-            <a href="https://www.youtube.com/embed/wL34vK-On3o" target="videos">
-                What Is The Internet Of Things?
-            </a> <br> 
-            <a href="https://www.youtube.com/embed/Q3ur8wzzhBU" target="videos">
-                What Does The IoT Mean?
-            </a>
-        </div>
+                <img class="img-left" src="img/robot.jpg" alt="IPT Lego Java Robot" width="300" 
+                     title="IPT Lego Java Robot" height="225">
+                <p>Internet of Things (IoT) and Social Robotics are regarded by many 
+                    as the next major technological challenge – a wave of change 
+                    comparable in effect to emergence of Internet itself. 
+                </p>
+                <p><abbr title="Internet of Things">IoT</abbr> is emerging as fusion of several technological tendencies in 
+                    their inter-dependence:<br>
+                    - Internet of Things & Mobility<br>
+                    - Social Robotics<br>
+                    - Big Data, Analytics and Cloud Computing<br>
+                    - Web Services & 
+                    <abbr title="Service Oriented Architecture">SOA</abbr> Infrastructure
+                </p>
 
+                <div class="container-right hmenu">
+                    <iframe name="videos" width="300" height="220" frameborder="0" 
+                            src="https://www.youtube.com/embed/Q3ur8wzzhBU" allowfullscreen>
+                    [YouTube IoT videos]
+                    </iframe>
+                    <a href="https://www.youtube.com/embed/wL34vK-On3o" target="videos">
+                        What Is The Internet Of Things?
+                    </a> <br> 
+                    <a href="https://www.youtube.com/embed/Q3ur8wzzhBU" target="videos">
+                        What Does The IoT Mean?
+                    </a>
+                </div>
 
-        <p>Course Multi-Agent Systems & Social Robotics presents some of the 
-            above tendencies highlighting the areas of intelligent actors / 
-            agents / appliances and social robotics.
-        </p>
-        <p>Social robots are interacting and communicating with people and/or 
-            other physical agents by following social rules and behaviors in 
-            accordance with the social role played by the robot. The social 
-            robots should be physically embodied in order to be able to 
-            participate in social interactions.
-        </p>    
-        <p>Kaspar [1] developed by University of Hertfordshire is an example 
-            of social robot. He helps to children with autism disease to 
-            learn social behaviors using interactive games.     
-        </p>
-        <h2>Introduction</h2>
-        <p>I’m driving home after a working day. The garage door opens automatically because it recognizes my car using wireless communication channel. Entering the apartment I feel hungry so I go to the refrigerator. “Hi” – the refrigerator says – “how do you feel?”. “O, I’m hungry, can you suggest something?” – I say. The refrigerator answers: “Yes I have a little surprise for you – while looking in Internet I have found a new receipt that perfectly suits to your taste. You may see how it looks in the kitchen computer screen, and it’s balanced in nutrition ingredients. I’ve even purchased the needed products from the supermarket in order to surprise you. What do you think?”. “Perfect! It looks great – how much time it will take to prepare it?” – am asking I. “O about 25 minutes – I’ll tell the electric cooker the optimal temperature program. By the way the TV told me that it has recorded a nice concert play for you – would you like to watch it until the dish becomes ready?” – suggests the fridge. “No I have to read a paper and I will leave immediately after dinner. Please tell the TV to transfer the record in the car computer – I’ll be listening there.” – is my answer. The refrigerator says: “OK – arranged. Please put the plate into the cooker. I’ll call you when the dish is ready. Wish you pleasant reading. And … the automatic vacuum cleaner complains it had too much work after the party last night, and asks to change the filter.”
-        </p><p>The situation described above may still look as a science fiction story, but the technologies that can make it reality already exist and have matured enough to be ready for practical application. The American company iRobot [70] (founded by the Director of the MIT Artificial Intelligence Lab Rod Brooks and his colleagues) already provides for the customer  market an automatic vacuum cleaning machine called Roomba that “uses intelligent navigation technology to automatically clean nearly all household floor surfaces without human direction”. 
-        </p><p>In order this dream of “the house of the future” to become a reality a number of models and technologies coming from different research areas should be combined – Systems Theory, Artificial Intelligence (speech recognition and synthesis, computer vision, distributed problem solving, planning, decision making and learning, etc.), Human-Computer Interaction (HCI), Object-Oriented Programming (OOP), Robotics, Communication Technologies (wireless communications, global networking), Social Sciences, Psychology. It is important that none of the technologies alone can provide the benefits coming from their synergetic application. The multidisciplinary nature of many contemporary research projects and the perceived need for more holistic approach towards the real-life, complex problems led to emergence of a new theoretical and practical approach for designing and building such systems, based on the concepts of intelligent agents and multi-agent systems (MAS).  This approach has tried to bring together the recent advances in each of the research areas mentioned above in order to facilitate their application for addressing problems intractable otherwise. It has been successfully applied in many domains, such as e-commerce and e-business, flexible networking, telecommunications and mobile technologies, adaptive human-computer interaction, information filtering, e-learning, entertainment, planning and scheduling, product design and manufacturing, traffic control, real-time control, etc.
-        </p><p>The aim of this paper is to provide an introduction to the area of intelligent agents and MAS, by making comparisons with more traditional computational models, technologies, and software architectures. 
-        </p><h2>Intelligent Agents and MAS – Historical Perspective</h2>
-        <p>The first thing we can start with is that despite the numerous research publications and practical applications of intelligent agent technologies, there is no universally accepted definition of what we call “intelligent agent”. It is not surprising that that such exact definition doesn’t exist considering the number of paradigms covered by this dynamic and multidisciplinary approach. Before presenting some of the existing definitions of ‘intelligent agent’ and ‘multi-agent system’ concepts we will consider in more detail the main research areas that contributed to the emergence of this new paradigm.
-        </p>
-        <h3>Artificial Intelligence (AI)</h3>
-        <p>AI is probably the most important contributor to the intelligent agents paradigm. According to [1, p. 3], AI “… attempts to understand intelligent entities. Thus, one reason to study is to learn more about ourselves. But unlike philosophy and psychology, which are also concerned with intelligence, AI strives to build intelligent entities as well as understand them”. Essentially there are two complementary directions of research in the field of AI – building an intelligent (rational or human like) entities that can carry out tasks otherwise performed by humans, and using these artificial entities to better understand human intelligence. There are two main AI approaches developed in order to achieve these goals:
-        </p><p>symbolic approach – representing the domain objects, relations, actions, and goals symbolically and using the logic apparatus to manipulate them in symbolic form (production systems, frames, logical programming)
-            behavioural (reactive) approach – based on the assumption that the intelligent system behaviour can emerge from interactions of a big number of simple, non-intelligent entities (artificial neural networks)
-        </p><p>The first approach originates in the Newell and Simon’s General Problem Solver (GPS) system [2], and expert systems are one of its most popular applications. By using it were developed algorithms for goal-directed searching in the space of possible decision alternatives, problem solving, and planning. A limitation of this approach is the so called property of “calculative rationality” [3, 4] in essence meaning that if the time for making optimal decision (plan) is not much shorter compared with the speed the environment changes, than the optimal decision generated for the initial state may not remain optimal for the current state of the environment when this decision has to be applied. 
-        </p><p>The second approach was developed in order to overcome the difficulties and limitations of the symbolic approach to cope with complex, real-time systems. Some problems not handled well by the symbolic approach are for example speech and image recognition, and analysis of real time data coming from multiple sensors. This approach was inspired by the observation of the mechanisms for achieving intelligent behaviour in biological organisms – the neurons have very simple structure but because of the number of connections between them the whole system may demonstrate intelligent behaviour. A natural limitation of this approach is that it is good in processing local data describing the current state of the environment, but there are some difficulties when trying to process data that is not local or current.
-        </p><p>From historical perspective the AI research began by concentrating on several distinct problem areas concerned with the different aspects of the natural intelligence (making decisions, reasoning and planning, learning, speech recognition and synthesis, computer vision, etc.). The assumption was that achieving significant progress in each area it will be relatively easy to integrate such achievements. But there was recognized that complex, real-life problems require sufficient efforts for integrating different models and technologies in a complete system. What initially AI failed to recognize was the importance of the environment and the connections between different objects (active or passive) existing in it. For example most expert systems are working detached from the real physical environment they try to model, by using a human specialist as mediator. The recognition of these limitations led to emergence of intelligent agents approach to AI. Actually this new approach inherits all the achievements of traditional AI branches and supplies them with a useful overall metaphor pointing their natural place in modelling an entire intelligent entity – intelligent agent.
-        </p>
+                <p>Course Multi-Agent Systems & Social Robotics presents some of the 
+                    above tendencies highlighting the areas of intelligent actors / 
+                    agents / appliances and social robotics.
+                </p>
+                <p>Social robots are interacting and communicating with people and/or 
+                    other physical agents by following social rules and behaviors in 
+                    accordance with the social role played by the robot. The social 
+                    robots should be physically embodied in order to be able to 
+                    participate in social interactions.
+                </p>    
+                <p>Kaspar [1] developed by University of Hertfordshire is an example 
+                    of social robot. He helps to children with autism disease to 
+                    learn social behaviors using interactive games.     
+                </p>
+                <h2 id="intro">Introduction</h2>
+                <p>I’m driving home after a working day. The garage door opens automatically because it recognizes my car using wireless communication channel. Entering the apartment I feel hungry so I go to the refrigerator. “Hi” – the refrigerator says – “how do you feel?”. “O, I’m hungry, can you suggest something?” – I say. The refrigerator answers: “Yes I have a little surprise for you – while looking in Internet I have found a new receipt that perfectly suits to your taste. You may see how it looks in the kitchen computer screen, and it’s balanced in nutrition ingredients. I’ve even purchased the needed products from the supermarket in order to surprise you. What do you think?”. “Perfect! It looks great – how much time it will take to prepare it?” – am asking I. “O about 25 minutes – I’ll tell the electric cooker the optimal temperature program. By the way the TV told me that it has recorded a nice concert play for you – would you like to watch it until the dish becomes ready?” – suggests the fridge. “No I have to read a paper and I will leave immediately after dinner. Please tell the TV to transfer the record in the car computer – I’ll be listening there.” – is my answer. The refrigerator says: “OK – arranged. Please put the plate into the cooker. I’ll call you when the dish is ready. Wish you pleasant reading. And … the automatic vacuum cleaner complains it had too much work after the party last night, and asks to change the filter.”
+                </p><p>The situation described above may still look as a science fiction story, but the technologies that can make it reality already exist and have matured enough to be ready for practical application. The American company iRobot [70] (founded by the Director of the MIT Artificial Intelligence Lab Rod Brooks and his colleagues) already provides for the customer  market an automatic vacuum cleaning machine called Roomba that “uses intelligent navigation technology to automatically clean nearly all household floor surfaces without human direction”. 
+                </p><p>In order this dream of “the house of the future” to become a reality a number of models and technologies coming from different research areas should be combined – Systems Theory, Artificial Intelligence (speech recognition and synthesis, computer vision, distributed problem solving, planning, decision making and learning, etc.), Human-Computer Interaction (HCI), Object-Oriented Programming (OOP), Robotics, Communication Technologies (wireless communications, global networking), Social Sciences, Psychology. It is important that none of the technologies alone can provide the benefits coming from their synergetic application. The multidisciplinary nature of many contemporary research projects and the perceived need for more holistic approach towards the real-life, complex problems led to emergence of a new theoretical and practical approach for designing and building such systems, based on the concepts of intelligent agents and multi-agent systems (MAS).  This approach has tried to bring together the recent advances in each of the research areas mentioned above in order to facilitate their application for addressing problems intractable otherwise. It has been successfully applied in many domains, such as e-commerce and e-business, flexible networking, telecommunications and mobile technologies, adaptive human-computer interaction, information filtering, e-learning, entertainment, planning and scheduling, product design and manufacturing, traffic control, real-time control, etc.
+                </p><p>The aim of this paper is to provide an introduction to the area of intelligent agents and MAS, by making comparisons with more traditional computational models, technologies, and software architectures. 
+                </p>
+                <h2 id="history">Intelligent Agents and MAS – Historical Perspective</h2>
+                <p>The first thing we can start with is that despite the numerous research publications and practical applications of intelligent agent technologies, there is no universally accepted definition of what we call “intelligent agent”. It is not surprising that that such exact definition doesn’t exist considering the number of paradigms covered by this dynamic and multidisciplinary approach. Before presenting some of the existing definitions of ‘intelligent agent’ and ‘multi-agent system’ concepts we will consider in more detail the main research areas that contributed to the emergence of this new paradigm.
+                </p>
+                <h3 id="ai">Artificial Intelligence (AI)</h3>
+                <p>AI is probably the most important contributor to the intelligent agents paradigm. According to [1, p. 3], AI “… attempts to understand intelligent entities. Thus, one reason to study is to learn more about ourselves. But unlike philosophy and psychology, which are also concerned with intelligence, AI strives to build intelligent entities as well as understand them”. Essentially there are two complementary directions of research in the field of AI – building an intelligent (rational or human like) entities that can carry out tasks otherwise performed by humans, and using these artificial entities to better understand human intelligence. There are two main AI approaches developed in order to achieve these goals:
+                </p><p>symbolic approach – representing the domain objects, relations, actions, and goals symbolically and using the logic apparatus to manipulate them in symbolic form (production systems, frames, logical programming)
+                    behavioural (reactive) approach – based on the assumption that the intelligent system behaviour can emerge from interactions of a big number of simple, non-intelligent entities (artificial neural networks)
+                </p><p>The first approach originates in the Newell and Simon’s General Problem Solver (GPS) system [2], and expert systems are one of its most popular applications. By using it were developed algorithms for goal-directed searching in the space of possible decision alternatives, problem solving, and planning. A limitation of this approach is the so called property of “calculative rationality” [3, 4] in essence meaning that if the time for making optimal decision (plan) is not much shorter compared with the speed the environment changes, than the optimal decision generated for the initial state may not remain optimal for the current state of the environment when this decision has to be applied. 
+                </p><p>The second approach was developed in order to overcome the difficulties and limitations of the symbolic approach to cope with complex, real-time systems. Some problems not handled well by the symbolic approach are for example speech and image recognition, and analysis of real time data coming from multiple sensors. This approach was inspired by the observation of the mechanisms for achieving intelligent behaviour in biological organisms – the neurons have very simple structure but because of the number of connections between them the whole system may demonstrate intelligent behaviour. A natural limitation of this approach is that it is good in processing local data describing the current state of the environment, but there are some difficulties when trying to process data that is not local or current.
+                </p><p>From historical perspective the AI research began by concentrating on several distinct problem areas concerned with the different aspects of the natural intelligence (making decisions, reasoning and planning, learning, speech recognition and synthesis, computer vision, etc.). The assumption was that achieving significant progress in each area it will be relatively easy to integrate such achievements. But there was recognized that complex, real-life problems require sufficient efforts for integrating different models and technologies in a complete system. What initially AI failed to recognize was the importance of the environment and the connections between different objects (active or passive) existing in it. For example most expert systems are working detached from the real physical environment they try to model, by using a human specialist as mediator. The recognition of these limitations led to emergence of intelligent agents approach to AI. Actually this new approach inherits all the achievements of traditional AI branches and supplies them with a useful overall metaphor pointing their natural place in modelling an entire intelligent entity – intelligent agent.
+                </p>
+            </main>
+        </div> <!-- div class='container' -->
+        <footer>
+            Attribution-NonCommercial-ShareAlike 4.0 International 
+            (CC BY-NC-SA 4.0). Copyright &copy; 2015 by 
+            IPT – Intellectual Products & Technologies.
+        </footer>
     </body>
 </html>

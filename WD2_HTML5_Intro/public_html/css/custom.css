@@ -1,7 +1,14 @@
+body {
+    font-family: "Lucida Sans", Arial, sans-serif;
+    font-size: 10pt;
+}
+
 p {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+/* horizontal navigation */
 .hmenu {
     background-color: #ddf;
 }
@@ -9,6 +16,7 @@ p {
     color: white;
     background-color: cornflowerblue;
     font-family: "Lucida Sans", Arial, sans-serif;
+    font-size: 1.2em;
     text-decoration: none;
     display: inline-block;
     padding: 3px 10px 3px 10px;
@@ -22,6 +30,39 @@ p {
 .hmenu a:active {
     border-color: white;
 }
+
+/* left navigation */
+.vmenu {
+    float: left;
+    width: 150px;
+}
+.vmenu a {
+    color: white;
+    background-color: cornflowerblue;
+    font-family: "Lucida Sans", Arial, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    border: 1px solid #88f;
+    border-radius: 5px;
+}
+.vmenu a:hover {
+    background-color: #0066cc;
+}
+.vmenu a:active {
+    border-color: white;
+}
+
+
+
+main {
+    margin-left: 160px;
+    border-left: 1px dotted #ccc;
+    padding-left: 15px;
+}
+
 
 .img-left {
     float: left; 
@@ -45,6 +86,15 @@ abbr {
     padding: 3px;
 }
 
+/* footer */
+footer {
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
 
 
 
