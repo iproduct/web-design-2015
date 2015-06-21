@@ -113,17 +113,27 @@ footer {
         border-left: none;
         padding-left: 0;
     }
+    .img-left {
+        float: none; 
+        width: 100%
+    }
+    .container-right,  .container-right iframe{
+        float: none; 
+        width: 100%;
+    }
+
 }
 
 /* tablet css */
 @media screen and (min-width: 451px) and (max-width: 780px) {
     .img-left {
         float: none; 
-        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container-right {
         float: none; 
-        margin: 10px;
+        margin: auto;
         width: 300px;
     }
 }
