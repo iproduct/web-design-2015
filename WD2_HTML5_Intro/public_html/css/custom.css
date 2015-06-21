@@ -63,7 +63,7 @@ main {
     padding-left: 15px;
 }
 
-
+/* Micelaneos */
 .img-left {
     float: left; 
     margin-right: 20px;
@@ -85,6 +85,10 @@ abbr {
     border-radius: 5px;
     padding: 3px;
 }
+.list-inside {
+    list-style: square inside url("../img/robot-bullet.png");
+}
+
 
 /* footer */
 footer {
@@ -96,5 +100,30 @@ footer {
     padding: 15px;
 }
 
+/* mobile css */
+@media screen and (max-width: 450px) {
+    .vmenu {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-left: none;
+        padding-left: 0;
+    }
+}
 
-
+/* tablet css */
+@media screen and (min-width: 451px) and (max-width: 780px) {
+    .img-left {
+        float: none; 
+        margin: 10px;
+    }
+    .container-right {
+        float: none; 
+        margin: 10px;
+        width: 300px;
+    }
+}
