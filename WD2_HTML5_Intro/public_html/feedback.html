@@ -35,8 +35,66 @@ and open the template in the editor.
                     
             </nav>
             <main>
-                <form>
-                    <input type="text" id="name" name="name">
+                <form method="GET">
+                    <table>
+                            <tr>
+                                <td>Your name: </td>
+                                <td><input type="text" id="name" name="name" 
+                                           placeholder="e.g. John Smith"></td>
+                            </tr>
+                            <tr>
+                                <td>Your password: </td>
+                                <td><input type="password" id="password" name="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="radio" name="kind" value="feedback" checked>Feedback
+                                    <input type="radio" name="kind" value="question">Question
+                                    <input type="radio" name="kind" value="proposal">Proposal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Message: </td>
+                                <td>
+                                    <textarea id="message" name="message" rows="4" cols="40" 
+                                              placeholder="Your message here ...">                    
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" name="submit"
+                                           value="Submit"></td>
+                                <td><input type="reset" value="Reset"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                    </table>
+
+                    
+                   
                 </form>
             </main>
         </div> <!-- div class='container' -->
