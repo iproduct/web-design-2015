@@ -61,6 +61,7 @@ main {
     margin-left: 160px;
     border-left: 1px dotted #ccc;
     padding-left: 15px;
+    min-height: 300px;
 }
 
 /* Micelaneos */
