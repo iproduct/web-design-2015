@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IoT Media Resources</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+        <style>
+        </style>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <h1>IoT Media Resources</h1>
+            <nav class="hmenu">
+                <a href="index.html">Home</a>
+                <a href="samples.html">Sample Projects</a>
+                <a href="media.html">Media</a>
+            </nav>
+        </header>        
+        <div class="container">
+            <nav class="vmenu">
+                <a href="#video">Video</a>
+                <a href="#animation">Animation</a>
+                <a href="#graphics">Graphics</a> 
+            </nav>
+            <main>
+                <section>
+                    <h2>Video</h2>
+                    <article>
+                        <video controls width="400" height="300">
+                            <source src="video/20150227170245.OGG" type="video/ogg">
+                            <source src="video/20150227170245.MP4" type="video/mp4">
+                            <object CLASSID="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95"
+                                    codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+                                    standby="Loading Microsoft Windows® Media Player components..."
+                                    type="application/x-oleobject" width="400" height="300">
+                                <param name="src" value="video/20150227170245.MP4">
+                                <param name="animationatStart" value="true">
+                                <param name="transparentatStart" value="true">
+                                <param name="autoStart" value="true">
+                                <param name="showControls" value="true">
+                                <param name="Volume" value="450">
+                                <embed type="application/x-mplayer2" loop="true"
+                                       pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"
+                                       src="video/20150227170245.MP4" name="MediaPlayer1" 
+                                       width="400" height="300"
+                                       autostart=1 showcontrols=1 volume=-450>
+                            </object>
+                        </video>
+                    </article>
+                </section>
+            </main>
+        </div> <!-- div class='container' -->
+        <footer>
+            Attribution-NonCommercial-ShareAlike 4.0 International 
+            (CC BY-NC-SA 4.0). Copyright &copy; 2015 by 
+            IPT – Intellectual Products & Technologies.
+        </footer>
+    </body>
+</html>
