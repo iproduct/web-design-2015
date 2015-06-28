@@ -31,10 +31,14 @@ p {
     border-color: white;
 }
 
+.container {
+    background: #fff url("../img/gradient1.png") repeat-y scroll 20% top;
+}
+
 /* left navigation */
 .vmenu {
     float: left;
-    width: 150px;
+    width: 20%;
 }
 .vmenu a {
     color: white;
@@ -58,7 +62,7 @@ p {
 
 
 main {
-    margin-left: 160px;
+    margin-left: 20%;
     border-left: 1px dotted #ccc;
     padding-left: 15px;
     min-height: 300px;
@@ -121,6 +125,9 @@ footer {
     .container-right,  .container-right iframe{
         float: none; 
         width: 100%;
+    }
+    .container {
+        background: #fff;
     }
 
 }
