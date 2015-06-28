@@ -144,4 +144,14 @@ footer {
         margin: auto;
         width: 300px;
     }
+
+    .container {
+        background: #fff;
+    }
+    .vmenu {
+        width: 30%;
+    }
+    main {
+        margin-left: 30%;
+    }
 }
