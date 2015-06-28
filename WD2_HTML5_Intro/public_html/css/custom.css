@@ -31,6 +31,27 @@ p {
     border-color: white;
 }
 
+.gototop {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    display:block;
+    background-color: rgba(128, 128, 255, 0.8);
+    padding: 5px 15px;
+    border: 1px dotted white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.gototop a {
+   color: white;
+   text-decoration: none;
+}
+
+.gototop:hover {
+    background-color: rgba(80, 80, 255, 1);
+}
+
 .container {
     background: #fff url("../img/gradient1.png") repeat-y scroll 20% top;
 }
