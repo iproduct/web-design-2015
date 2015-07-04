@@ -6,6 +6,7 @@ body {
 header, .container, footer {
     max-width: 980px;
     margin: auto;
+    padding: 20px;
 }
 
 p {
@@ -14,9 +15,6 @@ p {
 }
 
 /* horizontal navigation */
-.hmenu {
-    background-color: #ddf;
-}
 .hmenu a {
     color: white;
     background-color: cornflowerblue;
@@ -58,7 +56,17 @@ p {
 }
 
 .container {
-    background: #fff url("../img/gradient1.png") repeat-y scroll 20% top;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+background: rgb(206,220,231); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NlZGNlNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1OTZhNzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 ); /* IE6-8 */
 }
 
 /* left navigation */
@@ -85,12 +93,10 @@ p {
     border-color: white;
 }
 
-
-
 main {
+    padding: 20px;
     margin-left: 20%;
     border-left: 1px dotted #ccc;
-    padding-left: 15px;
     min-height: 300px;
 }
 
@@ -128,7 +134,6 @@ footer {
     font-weight: bold;
     background-color: #555;
     color: white;
-    padding: 15px;
 }
 
 /* mobile css */
@@ -210,7 +215,7 @@ background: linear-gradient(to bottom,  #c4ffef 0%,#2989d8 50%,#207cca 51%,#0094
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4ffef', endColorstr='#0094f7',GradientType=0 ); /* IE6-8 */
 }
 
-.hmenu {
+header {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+69,b5c6d0+100,e0eff9+100 */
 background: #f2f6f8; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -237,4 +242,8 @@ background: -o-linear-gradient(left,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* O
 background: -ms-linear-gradient(left,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
 background: linear-gradient(to right,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); /* IE6-8 */
+}
+
+body {
+    background-image: url("../img/bo_play_pattern.png");
 }
