@@ -3,6 +3,11 @@ body {
     font-size: 10pt;
 }
 
+header, .container, footer {
+    max-width: 980px;
+    margin: auto;
+}
+
 p {
     margin-top: 16px;
     margin-bottom: 16px;
