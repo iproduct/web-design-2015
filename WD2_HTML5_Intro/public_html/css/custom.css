@@ -207,7 +207,7 @@ footer {
     }
 }
 
-.hmenu a, .vmenu a {
+.hmenu a, .vmenu a, #projects th {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,2989d8+50,207cca+51,1e5799+99 */
 background: #7db9e8; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -269,3 +269,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 body {
     background-image: url("../img/bo_play_pattern.png");
 }
+
+/* Interactive.html */
+#projects th:nth-child(1) {
+    width: 5%;
+}
+#projects th:nth-child(2) {
+    width: 25%;
+}
+#projects th:nth-child(3) {
+    width: 40%;
+}
+#projects th:nth-child(4) {
+    width: 30%;
+}
+
+#projects table {
+    border-collapse: collapse; 
+}
+#projects tr {
+    border-bottom: 1px solid blue;
+}
+
+#projects th {
+    color: white;
+    padding: 5px;
+}
+
+#projects td{
+    padding: 3px;
+    background-color: #eef;
+}
+
+#projects td img {
+    width: 100%;
+}
+
+
+
