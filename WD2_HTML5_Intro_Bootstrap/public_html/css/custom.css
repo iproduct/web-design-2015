@@ -252,3 +252,6 @@ body {
       font-size: 45px;
     }
 }
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    max-height: 400px;
+}
